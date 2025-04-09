@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using zadanie_4.Models;
 
 namespace zadanie_4.Formatters;

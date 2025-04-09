@@ -1,7 +1,6 @@
 using zadanie_4.Models;
 using System.Xml.Serialization;
 
-
 namespace zadanie_4.Formatters;
 
 public class XmlFormatter : IRaportFormatter

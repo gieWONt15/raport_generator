@@ -3,7 +3,6 @@ using zadanie_4.Models;
 
 namespace zadanie_4;
 
-
 class Program
 {
     static void Main(string[] args)
