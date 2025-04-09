@@ -7,7 +7,7 @@ public class CsvFormatter : IRaportFormatter
 {
     public void ZapiszRaport(List<Sprzedaz> dane)
     {
-        using (StreamWriter sw = new StreamWriter("raport.csv"))
+        using (StreamWriter sw = new StreamWriter($"raport_{DateTime.Now:yyyy-MM-dd_HH-mm}.csv"))
         {
             sw.WriteLine("Produkt,Ilość,Cena,Data");
             foreach (var s in dane)

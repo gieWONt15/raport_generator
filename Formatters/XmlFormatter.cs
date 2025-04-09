@@ -10,7 +10,7 @@ public class XmlFormatter : IRaportFormatter
     {
         XmlSerializer serializer = new XmlSerializer(typeof(List<Sprzedaz>));
 
-        using (FileStream fs = new FileStream("raport.xml", FileMode.Create))
+        using (FileStream fs = new FileStream($"raport_{DateTime.Now:yyyy-MM-dd_HH-mm}.xml", FileMode.Create))
         {
             serializer.Serialize(fs, dane);
         }
